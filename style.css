@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&family=Roboto&display=swap");
+
+:root {
+  --black: #000000ff;
+  --blue: #14213dff;
+  --light-blue: #233a6c;
+  --grey: #e5e5e5ff;
+  --white: #ffffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  position: relative;
+  font-size: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 10px;
+  z-index: 9;
+  width: 300px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  background-color: var(--light-blue);
+  border-radius: 5px;
+}
+
+#nav-items {
+  width: 100%;
+  padding: 5px 0;
+  height: 30px;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--grey);
+  padding: 5px 10px;
+  z-index: 9;
+}
+
+#active {
+  position: absolute;
+  background-color: var(--blue);
+  border-radius: 5px;
+}
+
+main {
+  position: relative;
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.parallax {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#bg {
+  z-index: -3;
+  position: fixed;
+}
+
+#car {
+  z-index: -2;
+}
+
+#grass {
+  z-index: 0;
+}
+
+#title {
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: scale(2);
+  color: rgb(201, 201, 201);
+  color: var(--grey);
+  text-shadow: 1px 1px var(--blue);
+}
+
+#title h1 {
+  color: var(--grey);
+  text-shadow: 3px 3px var(--blue);
+  font-family: "Leckerli One", cursive;
+}
+
+#services {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--black);
+}
+
+#services .image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+#services .show {
+  top: 0;
+  z-index: 1;
+}
+
+#services .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#services .image .caption {
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  color: red;
+}
+
+#services .show .caption {
+  color: white;
+  animation: fadeIn 1s forwards;
+  animation-delay: 0.5s;
+}
+
+.control {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  translate: -50% -100%;
+  z-index: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

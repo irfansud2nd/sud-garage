@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>sudGarage</title>
+  </head>
+  <body>
+    <nav>
+      <div id="nav-items">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a>Contact</a>
+      </div>
+      <div id="active"></div>
+    </nav>
+    <main>
+      <div id="home">
+        <img src="img/depth1.jpg" alt="" id="bg" class="parallax" />
+        <img src="img/depth2.png" alt="" id="car" class="parallax" />
+        <div id="title" class="parallax">
+          <h1>sudGarage</h1>
+          <h3>classic cars specialist</h3>
+        </div>
+        <img src="img/depth3.png" alt="" id="grass" class="parallax" />
+      </div>
+      <section id="services">
+        <div id="modify" class="show image">
+          <img src="img/silvia.png" alt="" />
+          <div class="caption">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur, eligendi obcaecati magnam minus nostrum quas
+              corporis impedit, vel sapiente esse commodi expedita itaque totam
+              dolorem nulla ipsam laboriosam ipsum quis!
+            </p>
+          </div>
+        </div>
+        <div id="restore" class="image">
+          <img src="img/shelby.jpg" alt="" />
+          <div class="caption">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur, eligendi obcaecati magnam minus nostrum quas
+              corporis impedit, vel sapiente esse commodi expedita itaque totam
+              dolorem nulla ipsam laboriosam ipsum quis!
+            </p>
+          </div>
+        </div>
+        <div class="control">
+          <button data-target="modify">modify</button>
+          <button data-target="restore">restore</button>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
